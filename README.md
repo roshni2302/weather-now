@@ -1,16 +1,78 @@
-# React + Vite
+# Weather Now ☀️🌧️🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean weather application built for **Jamie**, an outdoor enthusiast who needs to **quickly check current weather conditions** for any city before heading out.
 
-Currently, two official plugins are available:
+This application lets the user:
+- Search weather by city name
+- View temperature and wind speed
+- See a visual weather icon (sun, clouds, rain, snow, etc.)
+- Enjoy a clean glassmorphism style UI and smooth user experience
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌍 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **https://weather-now-black-five.vercel.app/**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧑‍💼 User Persona
+
+| Field | Details |
+|------|---------|
+| **Name** | Jamie |
+| **Occupation** | Outdoor Enthusiast |
+| **Need** | Quickly check current weather for any city |
+| **Solution** | A fast and simple web app with one-step search and minimal UI distractions |
+
+Jamie prefers:
+- Quick access (no delays)
+- Clear temperature visibility
+- Simple & friendly UI
+
+This app fulfills those needs.
+
+---
+
+## ✨ Features
+
+- ✅ Instant City Search
+- ✅ Live Weather Data (No login required)
+- ✅ Weather Icons based on conditions
+- ✅ Glassmorphism Interface Design
+- ✅ Works on Desktop & Mobile
+
+---
+
+## 🔗 API Used
+
+This app uses **Open-Meteo API** (no API key needed):
+
+- Geocoding (Convert city → coordinates):
+  https://geocoding-api.open-meteo.com/v1/search?name=
+
+- Weather Fetch:
+  https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true
+
+---
+
+## 🧠 Tech Stack
+
+| Area | Technology |
+|------|------------|
+| Frontend Framework | React + Vite |
+| Styling | Tailwind CSS |
+| State Management | React useState |
+| Deployment | Vercel |
+| Version Control | Git & GitHub |
+
+---
+
+## 🖥️ How to Run Locally
+
+```bash
+git clone https://github.com/roshni2302/weather-now
+cd weather-now
+npm install
+npm run dev
+
